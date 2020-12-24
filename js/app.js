@@ -1,4 +1,3 @@
-
 var firebaseConfig = {
     apiKey: "AIzaSyC07tXpT73U9GAHIPGfOpSVYTZcOHNMTRA",
     authDomain: "api-postero.firebaseapp.com",

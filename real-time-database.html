@@ -9,23 +9,40 @@
     
 
     <title>Inicio</title>
-    
-    <!-- SCRIPTS -------- ------------ ------------------ ------------->
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://bootswatch.com/4/litera/bootstrap.min.css"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <!-- ------------ --------------- ------------------ ---------- -->
+    <script type="text/javascript" src="js/rt-database.js"></script>
 
 </head>
 <body>
  
-  <h1 class="titleh1">Póstero Dashboard</h1>
-  <h5><a href="real-time-database.html">Clientes Póstero</a></h5>
-  <h5>Cadastrar Nota</h5>
+  <h1 class="titleh1">Contatos Póstero</h1>
 
+  <ul id="clientList"></ul>
+  <hr>
+
+  <div class="col-md-4">
+    <form>
+        <div class="form-group">
+            <label for="nameInput">Nome</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Nome">
+        </div>
+        <div class="form-group">
+            <label for="ageInput">Telefone</label>
+            <input type="text" class="form-control" id="contactInput" placeholder="ex. 85987654321">
+        </div>
+        <button class="btn btn-lg btn-block btn-primary" id="addButton">Adicionar</button>
+        
+
+    </form>
+  </div>
+  
+  <br>
+  <a href="index.html">Voltar para o inicio</a>
 </body>
 </html>
