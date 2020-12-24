@@ -14,7 +14,10 @@ window.onload = function(){
             contact: contact
         };
 
-        return firebase.database().ref().child('clients').push(data);
+        return firebase.database().ref().child('clients').push(data)
+        .catch(function(err){
+            console.log(err);
+        });
     }
 }
 
@@ -24,5 +27,5 @@ firebase.database().ref('clients').on('value', function(snapshot){
         var li = document.createElement('li');
         li.appendChild(document.createTextNode(item.val().name+': '+item.val().contact));
         clientList.appendChild(li);
-    }).catch(e);
+    })
 });
