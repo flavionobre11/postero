@@ -9,7 +9,7 @@ var firebaseConfig = {
     measurementId: "G-35L2MG4JR1"
 };
 
-console.log("Aqui eu entro de boa");
+console.log("To aqui no app.js");
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();

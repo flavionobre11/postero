@@ -4,6 +4,7 @@
   "description": "Aplicacao inicial para melhorar producao da Postero Clothes",
   "main": "index.js",
   "dependencies": {
+    "firebase": "^8.2.1",
     "http-server": "^0.12.3"
   },
   "devDependencies": {},
