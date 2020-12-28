@@ -1,0 +1,30 @@
+{
+  "name": "api-postero",
+  "version": "1.0.0",
+  "description": "Aplicacao inicial para melhorar producao da Postero Clothes",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavionobre11/postero.git"
+  },
+  "keywords": [
+    "postero",
+    "api",
+    "firebase",
+    "vuejs",
+    "bootstrap"
+  ],
+  "author": "Flavio Nobre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavionobre11/postero/issues"
+  },
+  "homepage": "https://github.com/flavionobre11/postero#readme"
+}
