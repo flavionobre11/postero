@@ -5,7 +5,12 @@ window.onload = function(){
     var addButton = document.getElementById('addButton');
 
     addButton.addEventListener('click', function(){
-        create(nameInput.value, contactInput.value);
+        if(nameInput.value=="" || contactInput.value==""){
+            alert("Digite informações válidas.")
+        }else{
+            console.log("diabeisso doido")
+            create(nameInput.value, contactInput.value);
+        }
     })
 
     function create(name, contact){
@@ -21,7 +26,10 @@ window.onload = function(){
     }
 }
 
+
+
 firebase.database().ref('clients').on('value', function(snapshot){
+    alert("Aqui eu entro de boa");
     clientList.innerHTML = '';
     snapshot.forEach(function (item){
         var li = document.createElement('li');
