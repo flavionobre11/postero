@@ -1,0 +1,93 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    color: rgb(51, 51, 51);
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.container {
+    align-items: center;
+    padding: 0 0 2rem 0;
+    margin: 2em 1em 0em 1em;
+    /* background-color: rgb(187, 187, 187); */
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: -.2rem;
+}
+
+.btn-container {
+    display: flex;
+    text-align: center;
+    flex-wrap:wrap;
+    justify-content: center;
+    vertical-align: center;
+    padding: 0;
+}
+.btn-postero>p{
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.btn-postero {
+    cursor: pointer;
+    padding: 0.8rem;
+    margin: 0 .6em .6em 0;
+    border: none;
+    border-radius: 10%;
+    background-color: tomato;
+    max-height: 10rem;
+    height: 10em;
+    max-width: 10rem;
+    width: 10em;
+    min-width: 5em;
+    font-size: 1.3rem;
+    text-align:left;
+    color: white;
+    font-weight: bold;
+    transition: .2s;
+    outline: none;
+}
+
+.btn-postero:hover {
+    box-shadow: 1px 1px 1px 1px rgba(51, 51, 51, 0.178) !important;
+    transition: .2s !important;
+}
+
+.btn-postero:active, :focus {
+    border: 1px solid rgb(207, 166, 119) !important;
+    color: rgb(51, 51, 51) !important;
+    background-color:rgba(48, 48, 48, 0.11) !important;
+}
+
+.btn-postero:checked {
+    color: rgb(51, 51, 51) !important;
+    background-color: royalblue !important;
+    border: none !important;
+}
+
+.footer {
+    text-align: center;
+    border-top: solid 1px rgba(51, 51, 51, 0.205);
+}
+
+.footer>p {
+    font-size: .8rem;
+}

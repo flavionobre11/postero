@@ -1,0 +1,148 @@
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* background-color: #ffe0ed; */
+    padding: 0;
+    margin: 0;
+    color: rgb(51, 51, 51);
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+hr {
+    border-top: 1px solid rgb(255, 192, 110);
+    margin:0 0 1rem 0;
+}
+
+.container-clientes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    padding: 1rem !important;
+    margin: 0 1rem 0 1rem;
+    border: solid 1px #daa520;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: .2s;
+}
+
+.form-container {
+    height: auto;
+    flex:1 1 auto;
+}
+
+.tag-p {
+    font-size: .7rem;
+    margin-top: -6px;
+    margin-bottom: 1.4rem;
+}
+
+.form-container:hover {
+    box-shadow: 0 0 .2rem rgba(51, 51, 51, 0.349) !important;
+}
+
+.icon-user {
+    height: 5rem;
+    width: 5rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;   
+}
+
+
+.form-label{
+    display: block;
+    font-size: .8rem;
+    margin-bottom: 3px;
+
+}
+
+.form-input {
+    display: block;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+    width: 100%;
+    outline: none;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    line-height: 1.5;
+    transition: .2s;
+}
+
+.select {
+    background-color: transparent;
+    width: 100%;
+}
+
+.select > option {
+    color:rgb(238, 144, 22);
+}
+
+.form-client {
+    margin-top: 1rem;
+    padding: 0 1.65rem 0 0;
+    max-height: 0;
+    width: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.form-client> input:focus {
+    border: 1px solid rgb(207, 166, 119)
+}
+
+.collapse {
+    color: rgb(238, 144, 22);
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active{
+    color:rgb(158, 94, 11);
+    text-decoration: underline;
+  }
+
+  .btn {
+    display: block;
+    cursor:pointer;
+    color: white;
+    background-color: rgb(238, 144, 22);
+    padding: .7rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(238, 144, 22);
+    border-radius: .3rem;
+    font-size: .8rem;
+    font-weight: bold;
+    outline: none;
+    transition: .2s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: rgb(238, 144, 22);
+}
+
+  .list {   
+    flex: 2 1 auto;
+    width: 50vw;
+    overflow: auto;
+  }
