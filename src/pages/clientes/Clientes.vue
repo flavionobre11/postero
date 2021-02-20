@@ -9,7 +9,7 @@
 
                 <a class="collapse">+ informações pessoais</a>
                 <form id="pessoal" class="form-client">
-                    <label class="form-label" for="inputName">Nome:</label> {{ this.cliente.name }}
+                    <label class="form-label" for="inputName">Nome:</label>
                     <input v-model="cliente.name" class="form-input" type="text" name="inputName" id="inputName" placeholder="ex. Vitoria Vee">
                     <label class="form-label" for="inputTel">Telefone:</label>
                     <input v-model="cliente.tel" class="form-input" type="text" name="inputTel" id="inputTel" placeholder="apenas números">
@@ -61,8 +61,9 @@
                 <hr>
                 <button type="submit" class="btn" @click="registrar()">Registrar</button>
             </div>
+
             <div id="formulario" class="container list">
-                <Lista :cliente="this.cliente"/>
+                <Lista :cliente="cliente"/>
             </div>
       </div>
 
@@ -99,29 +100,31 @@ export default {
     },
 
     methods:{
-        registrar(){
-            alert('Registrou nada, besta.')
+        registrar: function (){
+            this.cliente.name = 'flavito';
+        },
+
+        collapseMethod: function () {
+            var coll = document.getElementsByClassName("collapse");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } 
+                });
+            }
         }
     },
 
-    created(){
+    mounted(){
         // script para collapse (esconder/mostrar itens)
-      window.onload = function(){
-        var coll = document.getElementsByClassName("collapse");
-        var i;
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
-        }
-      }
-    }
+        this.collapseMethod();
+    },
 }
 </script>
 

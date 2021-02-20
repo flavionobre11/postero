@@ -1,7 +1,7 @@
 <template>
   <div id="lista">
-    <h1>Contatos{{ this.dados.name }}</h1>
-    <div id="cliente">
+    <h1>Contatos</h1>
+    <div id="cliente"> {{ cliente.name }}
       <table>
         <thead>
 
@@ -17,7 +17,7 @@
 
         <tbody>
 
-            <tr v-for="(cliente, index) in clientes" :key="cliente.name">
+            <tr v-for="(cliente, index) in clientes" :key="index">
                 <th scope="row">{{ index+1 }}</th>
                 <td>{{ cliente.name }}</td>
                 <td>{{ cliente.tel }}</td>
